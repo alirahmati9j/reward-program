@@ -1,4 +1,4 @@
-# Ali Demo Project
+# Reward Program Demo Project
 This project is create in Java 8 Spring boot application. This project has following components:
 1. Rest Web Services with industry standard design pattern.
 2. Logging using Log4j2.
@@ -19,8 +19,8 @@ Open Eclipse/STS > Go in File > Open project > Maven Import > Import existing ma
 Open intellij > Go in File > Open > Select directory from file chooser and import as maven project.
 
 #How to Run
-Open class ```com.ali.rewardprogram.RewardProgramApplication``` & Run main project.
-Server will be start on **port 8080**. Run URL ```http://localhost:8080``` in the browser. **Welcome to ali demo** will print it means server has started successfully.
+Open class ```com.demo.rewardprogram.RewardProgramApplication``` & Run main project.
+Server will be start on **port 8080**. Run URL ```http://localhost:8080``` in the browser. **Welcome to reward program demo** will print it means server has started successfully.
 
 #Call APIs from Postman
 
@@ -34,15 +34,15 @@ Header:
 
 Request-Payload:
     {
-        "username": "ali",
-        "name": "Ali Rahmati"
+        "username": "demo.user",
+        "name": "Demo User"
     }
 
 Response:
 {
     "id": 1,
-    "username": "ali",
-    "name": "Ali Rahmati"
+    "username": "demo.user",
+    "name": "Demo User"
     "registrationDate": "2022-04-01T17:48:52.018+00:00"
 }
 ```
@@ -57,7 +57,7 @@ Header:
 
 Request-Payload:
     {
-        "username": "ali",
+        "username": "demo.user",
         "total": 120
     }
 
@@ -72,7 +72,7 @@ Response:
 Endpoint: /reward
 Method: GET
 Query Params: 
-    username: ali
+    username: demo.user
     date=02-2022 (DD-MMMM)
 Header: 
     Content-Type: application/json
@@ -85,4 +85,4 @@ Response:
 
 # Run IT JUnit Test Cases.
 
-Open IDE & Open ```com.ali.rewardprogram.api.RewardITTest.java``` and Run this class as Junit Test.
+Open IDE & Open ```com.demo.rewardprogram.api.RewardITTest.java``` and Run this class as Junit Test.
